@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./workintech.svg" />
@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Solid:wght@100;300;400;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Londrina+Solid:wght@400&family=Roboto+Condensed:wght@300&family=Satisfy&family=Quattrocento:wght@700&display=swap"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,67 +15,105 @@
   </head>
 
   <body>
-    <section class="hero-image">
+    <!-- Hero Section -->
+    <header class="hero-image">
       <div class="hero-text">
         <h1>Teknolojik Yemekler</h1>
         <p class="hero-sub-text">fırsatı kaçırma</p>
         <p class="hero-main-text">KOD ACIKTIRIR<br />PIZZA, DOYURUR</p>
         <a href="#" class="hero-btn">ACIKTIM</a>
       </div>
-    </section>
-    <section>
-      <nav>
-        <ul class="navbar">
-          <li>
-            <a href="#"
-              ><img
-                class="icon"
-                src="./public/assets/iteration-2/icons/1.svg"
-              />YENİ! Kore</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="icon"
-                src="./public/assets/iteration-2/icons/2.svg"
-              />Pizza</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="icon"
-                src="./public/assets/iteration-2/icons/3.svg"
-              />Burger</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="icon"
-                src="./public/assets/iteration-2/icons/4.svg"
-              />Kızartmalar</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="icon"
-                src="./public/assets/iteration-2/icons/5.svg"
-              />Fast food</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="icon"
-                src="./public/assets/iteration-2/icons/6.svg"
-              />Gazlı İçecek</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </section>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a href="#"
+            ><img
+              class="icon"
+              src="./public/assets/iteration-2/icons/1.svg"
+              alt="Kore"
+            />YENİ! Kore</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              class="icon"
+              src="./public/assets/iteration-2/icons/2.svg"
+              alt="Pizza"
+            />Pizza</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              class="icon"
+              src="./public/assets/iteration-2/icons/3.svg"
+              alt="Burger"
+            />Burger</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              class="icon"
+              src="./public/assets/iteration-2/icons/4.svg"
+              alt="Kızartmalar"
+            />Kızartmalar</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              class="icon"
+              src="./public/assets/iteration-2/icons/5.svg"
+              alt="Fast food"
+            />Fast food</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              class="icon"
+              src="./public/assets/iteration-2/icons/6.svg"
+              alt="Gazlı içecek"
+            />Gazlı İçecek</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="main-section">
+      <div class="special">
+        <div class="card left">
+          <div class="card-content">
+            <p>Özel<br />Lezzetus</p>
+            <button>SİPARİŞ VER</button>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="card top-right">
+            <div class="card-content">
+              <p>Hackathlon<br />Burger Menü</p>
+              <button>SİPARİŞ VER</button>
+            </div>
+          </div>
+
+          <div class="card bottom-right">
+            <div class="card-content">
+              <p>
+                <span class="highlight-red">Çoooook</span> hızlı<br />npm gibi
+                kurye
+              </p>
+              <button>SİPARİŞ VER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
