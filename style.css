@@ -506,7 +506,12 @@ hr {
 
   .card-left,
   .card-right {
-    width: 29rem;
+    width: 25rem;
+    height: auto;
+  }
+
+  .card-top-right, .card-bottom-right {
+    height: auto;
   }
 
   .popular-menu-section {
@@ -529,18 +534,31 @@ hr {
   }
 
   /* Footer */
+
   .footer-main {
     flex-direction: column;
-    width: 100%;
+    width: 50vw;
     height: auto;
     gap: 20px;
     padding: 1rem;
+    padding-right: 2rem;
   }
   .copyright {
     flex-direction: column;
-    width: 100%;
+    width: 90vw;
     height: auto;
     gap: 10px;
     text-align: center;
+  }
+
+  .address {
+    display: block;
+  }
+  .instagram {
+    display: block;
+  }
+
+  .copyright {
+    flex-direction: row;
   }
 }
