@@ -186,7 +186,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 3rem;
+  gap: 3.5rem;
   align-items: center;
   justify-content: center;
 }
@@ -215,7 +215,7 @@ body {
   margin-right: 0.4rem;
 }
 
-nav {
+body > nav {
   padding: 1.5rem;
   background-color: white;
 }
@@ -227,7 +227,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1080px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -319,5 +319,159 @@ nav {
   color: red;
 }
 
+.popular-menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular-menu-section p:first-child {
+  color: red;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: auto;
+}
+
+.popular-menu-section h2 {
+  color: black;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+.popular-menu-section nav {
+  padding-bottom: 1.5rem;
+}
+
+.popular-menu-section a {
+  background-color: white;
+}
+
+#activated {
+  color: white;
+  background-color: black;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 23px;
+}
+
+.menu-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu-item h3 {
+  color: black;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.menu-item p {
+  color: black;
+  display: inline-block;
+  margin: 0;
+}
+
+.reviews {
+  padding-left: 90px;
+  padding-right: 110px;
+}
+
+.price {
+  font-weight: 900;
+}
 
 /****** footer ******/
+
+footer {
+  background-color: black;
+}
+
+.footer-main {
+  height: 450px;
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+address ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+address li {
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  gap: 10px;
+}
+
+.hot-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 2.2;
+}
+
+.hot-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.instagram {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+  grid-template-rows: auto repeat(2, 100px); /* önce başlık satırı, sonra 2 satır foto */
+  gap: 10px;
+  align-content: center;
+}
+
+.instagram h3 {
+  grid-column: 1 / -1; /* başlık tüm sütunları kaplasın */
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #292929;
+}
+
+.copyright {
+  width: 1080px;
+  height: 110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
