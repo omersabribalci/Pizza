@@ -130,17 +130,18 @@ body {
 .hero-text {
   text-align: center;
   color: white;
+  
 }
 
 .hero-btn {
   display: inline-block;
-  padding: 10px 40px;
+  padding: 15px 50px;
   color: black;
   background-color: #fdc913;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 100px;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -155,7 +156,7 @@ body {
   font-family: "Londrina Solid", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 25px;
 }
 
@@ -165,7 +166,7 @@ body {
   font-style: normal;
   color: #fdc913;
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 .hero-main-text {
@@ -173,8 +174,9 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 3.5rem;
-  margin: 10px;
+  font-size: 5rem;
+  margin-bottom: 30px;
+  margin-top: 10px;
   line-height: 1.1em;
 }
 
@@ -396,6 +398,7 @@ body > nav {
 
 footer {
   background-color: black;
+  margin-top: 50px;
 }
 
 .footer-main {
