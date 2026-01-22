@@ -105,9 +105,9 @@ button:focus-visible {
 
 /*****************/
 body {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 0;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -115,18 +115,19 @@ body {
 /******** hero *********/
 
 .hero-image {
+  min-height: 120vh;
   background-image: url("./public/assets/iteration-1/home-banner.png");
-  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; /* contain olunca resmi kırpmıyor ama ekranın tamamını kaplamıyor. */
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: flex-start;
 }
 
 .hero-text {
   text-align: center;
+  color: white;
 }
 
 .hero-btn {
@@ -220,18 +221,16 @@ nav {
 /******* main-section ********/
 
 .main-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
+  flex: 1;
 }
 
-.special {
+.special-cards {
   display: flex;
-  gap: 10px;
   flex-direction: row;
-  width: 70%;
-  height: 60%;
-  margin-top: 5em;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: center;
 }
 
+
+/* background-image: url(./public/assets/iteration-2/cta/kart-1.png); */
