@@ -81,6 +81,8 @@ button {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   font-style: normal;
+  width: auto;
+  align-self: flex-start;
 }
 button:hover {
   border-color: #646cff;
@@ -221,16 +223,101 @@ nav {
 /******* main-section ********/
 
 .main-section {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1080px;
+  margin: 0 auto;
 }
 
 .special-cards {
   display: flex;
   flex-direction: row;
-  margin-top: 5rem;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./public/assets/iteration-2/cta/kart-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 540px;
+  border-radius: 10px;
+}
+
+.card-left h2 {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 68px;
+  line-height: 70px;
+  padding-left: 30px;
+  margin: 50px 0 0 0;
+}
+
+.card-left p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 30px;
+  margin: 10px 0 0 0;
+}
+
+.card-left button {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 540px;
+  gap: 10px;
+}
+
+.card-top-right {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./public/assets/iteration-2/cta/kart-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 225px;
+  border-radius: 10px;
+  padding-left: 40px;
+}
+
+.card-bottom-right {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./public/assets/iteration-2/cta/kart-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 225px;
+  border-radius: 10px;
+  padding-left: 40px;
+}
+
+.card-top-right h2 {
+  margin-top: 40px;
+}
+
+.card-bottom-right h2 {
+  color: black;
+  margin-top: 40px;
+}
+
+.highlight-red {
+  color: red;
 }
 
 
-/* background-image: url(./public/assets/iteration-2/cta/kart-1.png); */
+/****** footer ******/
