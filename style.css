@@ -110,31 +110,33 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
 }
 
 /******** hero *********/
 
+header {
+  min-height: 100vh;
+}
+
 .hero-image {
-  min-height: 120vh;
   background-image: url("./public/assets/iteration-1/home-banner.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; /* contain olunca resmi kırpmıyor ama ekranın tamamını kaplamıyor. */
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  background-size: cover;
 }
 
 .hero-text {
   text-align: center;
   color: white;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-btn {
-  display: inline-block;
   padding: 15px 50px;
   color: black;
   background-color: #fdc913;
@@ -174,7 +176,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 5rem;
+  font-size: 3.5rem;
   margin-bottom: 30px;
   margin-top: 10px;
   line-height: 1.1em;
@@ -477,4 +479,68 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 480px) {
+  /* Genel ayarlar */
+  body {
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: stretch;
+  }
+
+  /* Main section */
+  .main-section {
+    width: 100%;
+  }
+  .special-cards {
+    flex-direction: column;
+  }
+
+  .card-left,
+  .card-right {
+    width: 29rem;
+  }
+
+  .popular-menu-section {
+    text-align: center;
+  }
+
+  /* Menu */
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .menu-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Reviews */
+  .reviews {
+    padding: 0 1rem;
+  }
+
+  /* Footer */
+  .footer-main {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    padding: 1rem;
+  }
+  .copyright {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    text-align: center;
+  }
 }
