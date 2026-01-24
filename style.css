@@ -186,6 +186,7 @@ header {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   list-style: none;
   padding: 0;
@@ -242,6 +243,8 @@ body > nav {
   width: 100%;
   margin: 0 auto;
   gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .card-left {
@@ -250,20 +253,22 @@ body > nav {
   background-image: url(./public/assets/iteration-2/cta/kart-1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
-  width: 540px;
+  height: auto;
+  min-height: 28.125rem;
+  width: 100%;
+  max-width: 33.75rem;
   border-radius: 10px;
-  margin-top: 50px;
+
 }
 
 .card-left h2 {
   font-family: "Quattrocento", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 68px;
-  line-height: 70px;
-  padding-left: 30px;
-  margin: 50px 0 0 0;
+  font-size: clamp(2rem, 4vw, 4.25rem); 
+  line-height: clamp(2.2rem, 4.5vw, 4.375rem); 
+  padding-left: 1.875rem; 
+  margin: 3.125rem 0 0 0; 
 }
 
 .card-left p {
@@ -286,7 +291,7 @@ body > nav {
   height: 450px;
   width: 540px;
   gap: 10px;
-  margin-top: 50px;
+
 }
 
 .card-top-right {
@@ -312,12 +317,12 @@ body > nav {
 }
 
 .card-top-right h2 {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .card-bottom-right h2 {
   color: black;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .highlight-red {
@@ -346,6 +351,7 @@ body > nav {
   font-style: normal;
   font-size: 2.5rem;
   margin-top: 10px;
+  text-align: center;
 }
 
 .popular-menu-section nav {
@@ -367,6 +373,7 @@ body > nav {
   align-items: center;
   justify-content: space-evenly;
   gap: 23px;
+  flex-wrap: wrap;
 }
 
 .menu-item {
@@ -389,8 +396,9 @@ body > nav {
 }
 
 .reviews {
-  padding-left: 90px;
-  padding-right: 110px;
+  padding-left: 5.625rem;  
+  padding-right: 6.875rem; 
+
 }
 
 .price {
@@ -405,19 +413,23 @@ footer {
 }
 
 .footer-main {
-  height: 450px;
-  width: 1080px;
+min-height: 28.125rem; 
+  width: 100%;
+  max-width: 67.5rem;    
+
   margin: 0 auto;
 }
 
 .footer-main {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
 
 address {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -436,6 +448,7 @@ address ul {
 
 address li {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   line-height: 1.5;
   margin-bottom: 16px;
@@ -451,6 +464,7 @@ address li {
 
 .hot-menu {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
@@ -474,8 +488,9 @@ hr {
 }
 
 .copyright {
-  width: 1080px;
-  height: 110px;
+  width: 100%;
+  max-width: 67.5rem;
+  min-height: 6.875rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -542,7 +557,6 @@ hr {
     gap: 15px;
   }
   .menu-item {
-    width: 100%;
     text-align: center;
   }
 
@@ -562,8 +576,8 @@ hr {
     padding-right: 2rem;
   }
   .copyright {
-    flex-direction: column;
-    width: 90vw;
+    flex-direction: row;
+    width: 55vw;
     height: auto;
     gap: 10px;
     text-align: center;
@@ -574,9 +588,5 @@ hr {
   }
   .instagram {
     display: block;
-  }
-
-  .copyright {
-    flex-direction: row;
   }
 }
