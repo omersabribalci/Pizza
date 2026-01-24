@@ -536,6 +536,7 @@ hr {
   /* Main section */
   .main-section {
     width: 100%;
+    background-color: #faf7f2;
   }
   .special-cards {
     flex-direction: column;
