@@ -268,6 +268,7 @@ body > nav {
   line-height: clamp(2.2rem, 4.5vw, 4.375rem);
   padding-left: 1.875rem;
   margin: 3.125rem 0 0 0;
+  color: white;
 }
 
 .card-left p {
@@ -277,6 +278,7 @@ body > nav {
   font-size: 20px;
   padding-left: 30px;
   margin: 10px 0 0 0;
+  color: white;
 }
 
 .card-left button {
@@ -316,6 +318,7 @@ body > nav {
 
 .card-top-right h2 {
   margin-top: 2.5rem;
+  color: white;
 }
 
 .card-bottom-right h2 {
@@ -424,6 +427,7 @@ body > nav {
 footer {
   background-color: black;
   margin-top: 50px;
+  color: white;
 }
 
 .footer-main {
@@ -509,6 +513,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 
 /*********** Media Query *************/
