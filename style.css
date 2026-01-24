@@ -489,14 +489,14 @@ address li {
 
 .instagram {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 sütun */
-  grid-template-rows: auto repeat(2, 100px); /* önce başlık satırı, sonra 2 satır foto */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: auto repeat(2, 100px); 
   gap: 10px;
   align-content: center;
 }
 
 .instagram h3 {
-  grid-column: 1 / -1; /* başlık tüm sütunları kaplasın */
+  grid-column: 1 / -1; 
 }
 
 hr {
