@@ -544,7 +544,7 @@ hr {
 
   .card-left {
     width: 25rem;
-    height: 336px;
+    min-height: 270px;
   }
 
   .card-right {
